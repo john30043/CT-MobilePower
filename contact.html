@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cybertruck Mobile Power Station</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cybertruck Power Logo" height="48">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="service">Service Type</label>
+                <select id="service" name="service">
+                    <option value="Power Station">Power Station</option>
+                    <option value="Charging">Charging</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+                <p class="form-note">* This form uses Formspree for submissions. Replace <code>your-form-id</code> with your Formspree ID.</p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
